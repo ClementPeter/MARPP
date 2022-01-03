@@ -31,8 +31,7 @@ class ChildWidget extends StatelessWidget {
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   fontSize: 18.0,
-                  letterSpacing: .5,
-                  //fontStyle: FontStyle.
+                  letterSpacing: .5,                       
                 ),
               ),
               textAlign: TextAlign.center,
@@ -43,10 +42,7 @@ class ChildWidget extends StatelessWidget {
                 height: 300,
                 width: 300,
                 child: Image.asset("images/$file.png"),
-                // child: Flexible(
-                //   fit: FlexFit.tight,
-                //   child: Image.asset("images/$file.png"),
-                // ),
+           
               ),
             )
           ],

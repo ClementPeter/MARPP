@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'main.dart';
+import '../main.dart';
 
 class Splash extends StatefulWidget {
   //const Splash({ Key? key }) : super(key: key);
@@ -34,7 +33,7 @@ class _SplashState extends State<Splash> {
             color: Color(0XFFFCFAFF),
           ),
           child: Column(
-            mainAxisAlignment:  MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
                 child: Row(
