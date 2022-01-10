@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
 
+//App Splash Screeen displaying App Name and Logo
 class Splash extends StatefulWidget {
-  //const Splash({ Key? key }) : super(key: key);
-
   @override
   _SplashState createState() => _SplashState();
 }
@@ -16,7 +15,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigatetointro() async {
-    await Future.delayed(Duration(milliseconds: 5000), () {});
+    await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(

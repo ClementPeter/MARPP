@@ -3,6 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 enum ScreenNumber { First, Second, Third }
 
+//Page View Child Widget
+//Displaying PageView Children using Enums other than new screens
+
 class ChildWidget extends StatelessWidget {
   final ScreenNumber number;
   final String description;
@@ -31,7 +34,7 @@ class ChildWidget extends StatelessWidget {
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   fontSize: 18.0,
-                  letterSpacing: .5,                       
+                  letterSpacing: .5,
                 ),
               ),
               textAlign: TextAlign.center,
@@ -42,7 +45,6 @@ class ChildWidget extends StatelessWidget {
                 height: 300,
                 width: 300,
                 child: Image.asset("images/$file.png"),
-           
               ),
             )
           ],
