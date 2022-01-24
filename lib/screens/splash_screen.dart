@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:marpp/screens/intro_screen.dart';
 import '../main.dart';
 
 //App Splash Screeen displaying App Name and Logo
 class Splash extends StatefulWidget {
+  static String id = "splash_screen";
+
   @override
   _SplashState createState() => _SplashState();
 }
@@ -14,6 +17,7 @@ class _SplashState extends State<Splash> {
     _navigatetointro();
   }
 
+  //Navigate to Intro Screen PageView
   _navigatetointro() async {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
@@ -24,6 +28,7 @@ class _SplashState extends State<Splash> {
     );
   }
 
+  //Splash Screen
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
@@ -40,11 +45,12 @@ class _SplashState extends State<Splash> {
                   children: [
                     Row(
                       children: [
+                        Image.asset('images/marpp.png'),
                         Text(
                           'MARPP',
                           style: TextStyle(
                             //fontStyle: FontStyle.,
-                            fontSize: 80.0,
+                            fontSize: 70.0,
                             fontFamily: "Benyo",
                           ),
                         )
@@ -53,7 +59,6 @@ class _SplashState extends State<Splash> {
                   ],
                 ),
               ),
-              Image.asset('images/marpp.png'),
             ],
           ),
         ),
