@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:marpp/screens/login_in_screen.dart';
+import 'package:marpp/screens/login_screen.dart';
 import 'package:marpp/screens/pageView_screen.dart';
 import 'package:marpp/screens/register_screen.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marpp/screens/intro_screen.dart';
 import 'package:marpp/screens/register_screen.dart';
-import 'package:marpp/screens/login_in_screen.dart';
+import 'package:marpp/screens/login_screen.dart';
 import 'package:marpp/screens/splash_screen.dart';
 // import 'screens/pageView_screen.dart';
 
