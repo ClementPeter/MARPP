@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:marpp/screens/intro_screen.dart';
-import '../main.dart';
 
 //App Splash Screeen displaying App Name and Logo
 class Splash extends StatefulWidget {
@@ -39,26 +38,37 @@ class _SplashState extends State<Splash> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [
-                        Image.asset('images/marpp.png'),
-                        Text(
-                          'MARPP',
-                          style: TextStyle(
-                            //fontStyle: FontStyle.,
-                            fontSize: 70.0,
-                            fontFamily: "Benyo",
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
+              Image.asset('images/shield.png'),
+
+              Text(
+                'MARPP',
+                style: TextStyle(
+                  //fontStyle: FontStyle.,
+                  fontSize: 70.0,
+                  fontFamily: "Benyo",
                 ),
               ),
+              // Center(
+
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.center,
+              //     children: [
+              //       Row(
+              //         children: [
+              //           Image.asset('images/marpp (3).png'),
+              //           Text(
+              //             'MARPP',
+              //             style: TextStyle(
+              //               //fontStyle: FontStyle.,
+              //               fontSize: 70.0,
+              //               fontFamily: "Benyo",
+              //             ),
+              //           )
+              //         ],
+              //       ),
+              //     ],
+              //   ),
+              // ),
             ],
           ),
         ),

@@ -12,36 +12,36 @@ class RegistrationScreen extends StatelessWidget {
   //
   static String id = "Registration_screen";
   //
-  final String title;
-  final String subtitle;
-  final String mainButtonTitle;
-  final Widget form;
-  final bool showTermsText;
-  final void Function() onMainButtonTapped;
-  final void Function() onCreateAccountTapped;
-  final void Function() onForgotPassword;
-  final void Function() onBackPressed;
-  final void Function() onSignInWithApple;
-  final void Function() onSignInWithGoogle;
-  final String validationMessage;
-  final bool busy;
+  // final String title;
+  // final String subtitle;
+  // final String mainButtonTitle;
+  // final Widget form;
+  // final bool showTermsText;
+  // final void Function() onMainButtonTapped;
+  // final void Function() onCreateAccountTapped;
+  // final void Function() onForgotPassword;
+  // final void Function() onBackPressed;
+  // final void Function() onSignInWithApple;
+  // final void Function() onSignInWithGoogle;
+  // final String validationMessage;
+  // final bool busy;
 
-  const RegistrationScreen({
-    Key key,
-    this.title,
-    this.subtitle,
-    this.mainButtonTitle,
-    this.form,
-    this.onMainButtonTapped,
-    this.onCreateAccountTapped,
-    this.onForgotPassword,
-    this.onBackPressed,
-    this.onSignInWithApple,
-    this.onSignInWithGoogle,
-    this.validationMessage,
-    this.showTermsText = false,
-    this.busy = false,
-  }) : super(key: key);
+  // const RegistrationScreen({
+  //   Key key,
+  //   this.title,
+  //   this.subtitle,
+  //   this.mainButtonTitle,
+  //   this.form,
+  //   this.onMainButtonTapped,
+  //   this.onCreateAccountTapped,
+  //   this.onForgotPassword,
+  //   this.onBackPressed,
+  //   this.onSignInWithApple,
+  //   this.onSignInWithGoogle,
+  //   this.validationMessage,
+  //   this.showTermsText = false,
+  //   this.busy = false,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,9 @@ class RegistrationScreen extends StatelessWidget {
                 Icons.arrow_back_ios,
                 color: Colors.black,
               ),
-              onPressed: onBackPressed,
+              onPressed: () {
+                Navigator.pop(context);
+              },
             ),
             Text(
               "Create Account",
@@ -78,7 +80,10 @@ class RegistrationScreen extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: SizedBox(
                 //width: screenWidthPercentage(context, percentage: 0.7),
-                width: 400.0,
+                //width: 400.0,
+                width: MediaQuery.of(context).size.width,
+                //height: MediaQuery.of(context).size.height,
+
                 // child: BoxText.body(
                 //   subtitle!,
                 //   color: Colors.grey.shade400,

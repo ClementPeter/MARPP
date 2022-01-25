@@ -109,65 +109,6 @@
 //   }
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////////////////
 ////
 ////
@@ -181,18 +122,6 @@
 ///
 ///
 ///
-
-
-
-
-
-
-
-
-
-
-
-
 
 import 'package:flutter/material.dart';
 import 'package:auth_buttons/auth_buttons.dart';
@@ -208,36 +137,36 @@ class LoginScreen extends StatelessWidget {
   //
   static String id = "Login_screen";
   //
-  final String title;
-  final String subtitle;
-  final String mainButtonTitle;
-  final Widget form;
-  final bool showTermsText;
-  final void Function() onMainButtonTapped;
-  final void Function() onCreateAccountTapped;
-  final void Function() onForgotPassword;
-  final void Function() onBackPressed;
-  final void Function() onSignInWithApple;
-  final void Function() onSignInWithGoogle;
-  final String validationMessage;
-  final bool busy;
+  // final String title;
+  // final String subtitle;
+  // final String mainButtonTitle;
+  // final Widget form;
+  // final bool showTermsText;
+  // final void Function() onMainButtonTapped;
+  // final void Function() onCreateAccountTapped;
+  // final void Function() onForgotPassword;
+  // final void Function() onBackPressed;
+  // final void Function() onSignInWithApple;
+  // final void Function() onSignInWithGoogle;
+  // final String validationMessage;
+  // final bool busy;
 
-  const LoginScreen({
-    Key key,
-    this.title,
-    this.subtitle,
-    this.mainButtonTitle,
-    this.form,
-    this.onMainButtonTapped,
-    this.onCreateAccountTapped,
-    this.onForgotPassword,
-    this.onBackPressed,
-    this.onSignInWithApple,
-    this.onSignInWithGoogle,
-    this.validationMessage,
-    this.showTermsText = false,
-    this.busy = false,
-  }) : super(key: key);
+  // const LoginScreen({
+  //   Key key,
+  //   this.title,
+  //   this.subtitle,
+  //   this.mainButtonTitle,
+  //   this.form,
+  //   this.onMainButtonTapped,
+  //   this.onCreateAccountTapped,
+  //   this.onForgotPassword,
+  //   this.onBackPressed,
+  //   this.onSignInWithApple,
+  //   this.onSignInWithGoogle,
+  //   this.validationMessage,
+  //   this.showTermsText = false,
+  //   this.busy = false,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -256,10 +185,13 @@ class LoginScreen extends StatelessWidget {
                 Icons.arrow_back_ios,
                 color: Colors.black,
               ),
-              onPressed: onBackPressed,
+              //onPressed: onBackPressed,
+              onPressed: () {
+                Navigator.pop(context);
+              },
             ),
             Text(
-              "Create Account",
+              "Welcome",
               //style: TextStyle(fontSize: 34),
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
@@ -294,7 +226,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 18.0),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Full Name',
+                hintText: 'EmailName',
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide(color: Color(0XFF848484)),
@@ -314,15 +246,32 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 18.0),
             TextField(
               decoration: InputDecoration(
-                //border: OutlineInputBorder(),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(25.0),
-                  //borderSide:  BorderSide(                         ),
+                hintText: 'Password',
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(color: Color(0XFF848484)),
                 ),
-                //hintText: 'Enter a search term',
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                  borderSide: BorderSide(color: Color(0xff8C25F4)),
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  //borderSide:  BorderSide(
+                ),
               ),
             ),
-            //TextField(),
+            // TextField(
+            //   decoration: InputDecoration(
+            //     //border: OutlineInputBorder(),
+            //     border: OutlineInputBorder(
+            //       borderRadius: BorderRadius.circular(25.0),
+            //       //borderSide:  BorderSide(                         ),
+            //     ),
+            //     //hintText: 'Enter a search term',
+            //   ),
+            // ),
+            // //TextField(),
             //form,
             SizedBox(height: 18.0),
             //verticalSpaceRegular,
@@ -330,7 +279,7 @@ class LoginScreen extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: GestureDetector(
-                onTap: onForgotPassword,
+                //onTap: onForgotPassword,
                 // child: BoxText.body(
                 //   'Forget Password?',
                 // ),),
@@ -352,7 +301,7 @@ class LoginScreen extends StatelessWidget {
                 ),
             //if (validationMessage != null) verticalSpaceRegular,
             GestureDetector(
-              onTap: onMainButtonTapped,
+              //onTap: onMainButtonTapped,
               child: Container(
                 width: double.infinity,
                 height: 50,
@@ -370,7 +319,7 @@ class LoginScreen extends StatelessWidget {
                     //       )
                     //     :
                     Text(
-                  'REGISTER',
+                  'SIGN IN',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -383,7 +332,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 18.0),
             //if (onCreateAccountTapped != null)
             GestureDetector(
-              onTap: onCreateAccountTapped,
+              //onTap: onCreateAccountTapped,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -417,54 +366,90 @@ class LoginScreen extends StatelessWidget {
             ),
             //verticalSpaceRegular,
             SizedBox(height: 18.0),
-            Row(children: [
-              Divider(height: 3.0,)
-            ],),
-            Divider(),
+            Row(
+              children: [
+                Divider(
+                  height: 3.0,
+                )
+              ],
+            ),
+            //Divider(),
             //
             //
             //
-            FacebookAuthButton(
-              // darkMode: true,
-              //onPressed: onSignInWithGoogle ?? () {},
-              text: 'CONTINUE WITH FACEBOOK',
-              style: AuthButtonStyle(
-                buttonColor: Color(0xff4285F4),
-                iconSize: 24,
-                iconBackground: Colors.white,
-                buttonType: AuthButtonType.secondary,
-                height: 50,
-                textStyle: TextStyle(color: Colors.white),
-              ),
+            // FacebookAuthButton(
+            //   // darkMode: true,
+            //   //onPressed: onSignInWithGoogle ?? () {},
+            //   text: 'CONTINUE WITH FACEBOOK',
+            //   style: AuthButtonStyle(
+            //     buttonColor: Color(0xff4285F4),
+            //     iconSize: 24,
+            //     iconBackground: Colors.white,
+            //     buttonType: AuthButtonType.secondary,
+            //     height: 50,
+            //     textStyle: TextStyle(color: Colors.white),
+            //   ),
+            // ),
+
+            SizedBox(height: 18.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Divider(
+                  height: 3.0,
+                  thickness: 5.0,
+                ),
+                Text(
+                  'Or',
+                ),
+                Divider(
+                  height: 3.0,
+                  thickness: 5.0,
+                ),
+              ],
             ),
             SizedBox(height: 18.0),
-            if (Platform.isIOS)
-              AppleAuthButton(
-                //onPressed: onSignInWithApple ?? () {},
-                // darkMode: true,
-                text: 'CONTINUE WITH APPLE',
-                style: AuthButtonStyle(
-                  iconSize: 24,
-                  height: 50,
-                  textStyle: TextStyle(color: Colors.white),
-                  buttonType: AuthButtonType.secondary,
-                ),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //Icon()
+                //Icon(icon: Icons.ac_unit),
+                Image.asset("images/facebook.png"),
+                SizedBox(width: 20.0),
+                SvgPicture.asset('images/apple.svg',
+                    semanticsLabel: 'Apple Logo'),
+                SizedBox(width: 20.0),
+                SvgPicture.asset("images/google.svg",
+                    semanticsLabel: 'Google Logo'),
+              ],
+            ),
+            //if (Platform.isIOS)
+            // AppleAuthButton(
+            //   //onPressed: onSignInWithApple ?? () {},
+            //   // darkMode: true,
+            //   text: 'CONTINUE WITH APPLE',
+            //   style: AuthButtonStyle(
+            //     iconSize: 24,
+            //     height: 50,
+            //     textStyle: TextStyle(color: Colors.white),
+            //     buttonType: AuthButtonType.secondary,
+            //   ),
+            // ),
 
             //verticalSpaceRegular,
             SizedBox(height: 18.0),
-            GoogleAuthButton(
-              //onPressed: onSignInWithGoogle ?? () {},
-              text: 'CONTINUE WITH GOOGLE',
-              style: AuthButtonStyle(
-                buttonColor: Color(0xff4285F4),
-                iconSize: 24,
-                iconBackground: Colors.white,
-                buttonType: AuthButtonType.secondary,
-                height: 50,
-                textStyle: TextStyle(color: Colors.white),
-              ),
-            )
+            // GoogleAuthButton(
+            //   //onPressed: onSignInWithGoogle ?? () {},
+            //   text: 'CONTINUE WITH GOOGLE',
+            //   style: AuthButtonStyle(
+            //     buttonColor: Color(0xff4285F4),
+            //     iconSize: 24,
+            //     iconBackground: Colors.white,
+            //     buttonType: AuthButtonType.secondary,
+            //     height: 50,
+            //     textStyle: TextStyle(color: Colors.white),
+            //   ),
+            // )
           ],
         ),
       ),
