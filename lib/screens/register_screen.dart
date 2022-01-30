@@ -158,7 +158,7 @@ class RegistrationScreen extends StatelessWidget {
             SizedBox(height: 10.0),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Password',
+                hintText: 'Confirm Password',
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide(color: Color(0XFF848484)),
@@ -277,13 +277,18 @@ class RegistrationScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SvgPicture.asset('images/facebook.svg',
-                    semanticsLabel: 'FaceBook Logo'),
-                SizedBox(height: 20.0),
+                //Icon()
+                //Icon(icon: Icons.ac_unit),
+                Image.asset("images/facebook.png"),
+                SizedBox(width: 20.0),
+                SvgPicture.asset('images/apple.svg',
+                    semanticsLabel: 'Apple Logo'),
+                SizedBox(width: 20.0),
                 SvgPicture.asset("images/google.svg",
                     semanticsLabel: 'Google Logo'),
               ],
             ),
+
             //  SvgPicture.asset('Facebook.svg', semanticsLabel: 'FaceBook Logo'),
             //   SvgPicture.asset("google.svg", semanticsLabel: 'Google Logo'),
             //Divider(),

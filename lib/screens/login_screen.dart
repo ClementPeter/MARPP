@@ -226,7 +226,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 18.0),
             TextField(
               decoration: InputDecoration(
-                hintText: 'EmailName',
+                hintText: 'Email',
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide(color: Color(0XFF848484)),
@@ -358,12 +358,12 @@ class LoginScreen extends StatelessWidget {
             // ),
             //verticalSpaceRegular,
             SizedBox(height: 18.0),
-            Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Or',
-              ),
-            ),
+            // Align(
+            //   alignment: Alignment.center,
+            //   child: Text(
+            //     'Or',
+            //   ),
+            // ),
             //verticalSpaceRegular,
             SizedBox(height: 18.0),
             Row(
