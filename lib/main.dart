@@ -14,11 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(      
-        title: 'MARPP',
-        theme: ThemeData(
-          //primarySwatch: Color(0xff8C25F4)
-        ),
-        //home: Splash(),
+        title: 'MARPP',      
+       
         initialRoute: Splash.id,
         routes: {
           Splash.id: (context) => Splash(),

@@ -39,7 +39,6 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('images/shield.png'),
-
               Text(
                 'MARPP',
                 style: TextStyle(
@@ -49,7 +48,6 @@ class _SplashState extends State<Splash> {
                 ),
               ),
               // Center(
-
               //   child: Row(
               //     mainAxisAlignment: MainAxisAlignment.center,
               //     children: [
