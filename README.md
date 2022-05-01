@@ -1,8 +1,5 @@
 # marpp
 
-A new Flutter project.
+Mobile Codebase for marrp
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
 
