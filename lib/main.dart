@@ -13,17 +13,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(      
-        title: 'MARPP',      
-       
-        initialRoute: Splash.id,
-        routes: {
-          Splash.id: (context) => Splash(),
-          IntroScreen.id: (context) => IntroScreen(),
-          RegistrationScreen.id: (context) => RegistrationScreen(),
-          LoginScreen.id: (context) => LoginScreen(),
-        }
-        //navigatorKey: StackedService.navigatorKey,
-        );
+    return MaterialApp(
+      title: 'MARPP',
+      initialRoute: Splash.id,
+      routes: {
+        Splash.id: (context) => Splash(),
+        IntroScreen.id: (context) => IntroScreen(),
+        RegistrationScreen.id: (context) => RegistrationScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+      },
+    );
   }
 }

@@ -21,8 +21,8 @@ class _IntroScreenState extends State<IntroScreen> {
     super.dispose();
   }
 
-  PageController _pageController = PageController(initialPage: 0);
-  int currentIndex = 0;
+    PageController _pageController = PageController(initialPage: 0);
+    int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {

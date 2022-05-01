@@ -42,8 +42,8 @@ class ChildWidget extends StatelessWidget {
             SizedBox(height: 40.0),
             Flexible(
               child: SizedBox(
-                height: 300,
-                width: 300,
+                height: 290,
+                width: 290,
                 child: Image.asset("images/$file.png"),
               ),
             )
