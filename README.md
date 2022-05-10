@@ -2,7 +2,7 @@
 
 ## Mobile Codebase for marrp
 
-### This Project is a marketing appliaction to help Sellers reach their target audience
+### This Project is a Landing Page for a Marketing application to help Sellers reach their target audience
 
 
 - [x] Mobile
