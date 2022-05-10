@@ -42,12 +42,10 @@ class _SplashState extends State<Splash> {
               Text(
                 'MARPP',
                 style: TextStyle(
-                  //fontStyle: FontStyle.,
                   fontSize: 70.0,
                   fontFamily: "Benyo",
                 ),
               ),
-       
             ],
           ),
         ),
