@@ -47,26 +47,7 @@ class _SplashState extends State<Splash> {
                   fontFamily: "Benyo",
                 ),
               ),
-              // Center(
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           Image.asset('images/marpp (3).png'),
-              //           Text(
-              //             'MARPP',
-              //             style: TextStyle(
-              //               //fontStyle: FontStyle.,
-              //               fontSize: 70.0,
-              //               fontFamily: "Benyo",
-              //             ),
-              //           )
-              //         ],
-              //       ),
-              //     ],
-              //   ),
-              // ),
+       
             ],
           ),
         ),
