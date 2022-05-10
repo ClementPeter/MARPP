@@ -1,6 +1,6 @@
 # marpp
 
-## Mobile Codebase for marrp
+## Mobile Application Codebase for marrp
 
 
 - [x] Mobile
