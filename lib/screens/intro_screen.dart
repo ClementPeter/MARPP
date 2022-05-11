@@ -21,8 +21,8 @@ class _IntroScreenState extends State<IntroScreen> {
     super.dispose();
   }
 
-    PageController _pageController = PageController(initialPage: 0);
-    int currentIndex = 0;
+  PageController _pageController = PageController(initialPage: 0);
+  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +105,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 Center(
                   child: DotsIndicator(
                     decorator: DotsDecorator(
-                      activeColor: Color(0XFF8C25F4),
+                      activeColor: Color(0XFF008B2C),
                     ),
                     dotsCount: 3,
                     position: currentIndex.toDouble(),
@@ -119,7 +119,7 @@ class _IntroScreenState extends State<IntroScreen> {
                       GestureDetector(
                         onTap: () {
                           print('Sign up');
-                          print('gO TO REG SCREEN');
+                          print('GO TO REG SCREEN');
                           Navigator.pushNamed(context, RegistrationScreen.id);
                         },
                         child: Container(
@@ -136,7 +136,7 @@ class _IntroScreenState extends State<IntroScreen> {
                             ),
                           ),
                           decoration: BoxDecoration(
-                            color: Color(0XFF8C25F4),
+                            color: Color(0XFF008B2C),
                             borderRadius: BorderRadius.all(
                               Radius.circular(15.0),
                             ),
@@ -164,7 +164,7 @@ class _IntroScreenState extends State<IntroScreen> {
                           ),
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Color(0XFF8C25F4),
+                              color: Color(0XFF008B2C),
                               //width: 5,
                             ),
                             borderRadius: BorderRadius.all(
